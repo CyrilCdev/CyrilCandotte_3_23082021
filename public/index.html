@@ -4,17 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et réduire leur temps d’attente dans les restaurants.">
-    <link rel="stylesheet" href="css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/2f79477bfb.js" crossorigin="anonymous"></script>
 <!-- favicon -->
-    <link rel="shortcut icon" type="image/svg" href="img">
+    <link rel="shortcut icon" type="image/svg" href="./img/logo/logo1.svg">
     <title>Oh my Food</title>
 </head>
 <body>
-<!-- Loader -->
+<!-- chargement -->
 <div class="chargement"> </div>
   <header>
-<!-- logo and navigation -->
+<!-- logo et navigation -->
 <div class=title> 
     <h1>ohmyfood</h1>
 </div>
@@ -25,34 +25,32 @@
         <div class="Introduction">
             <h2 class="Introduction__titre">Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                <button class="btn">Explorer nos restaurants</button> 
+                <button class="btn_ex">Explorer nos restaurants</button> 
         </div>
     </header>
-    <section>
+
+
+    
 <!--Section Fonctionnement-->             
-        <h2>Fonctionnement</h2>
-        <div class="bloc_fonctionnement"> 
-            <div class="bloc_fonctionnement__cube">
-                <div class="number">1</div>
-                <i class="icon fas fa-mobile-alt"></i>Choisissez un restaurant
-            </div>
-            <div class="bloc_fonctionnement__cube">
-                <div class="number">2</div>
-                <i class="icon fas fa-list-ul"></i> Composez votre menu
-            </div>
-            <div class="bloc_fonctionnement__cube">
-                <div class="number">3</div>
-                <i class="icon fas fa-store"></i> Dégustez au restaurant
-            </div>
-    </div>
-    </section>
+        
+        <section class="tutorial">
+        <h2 class="tutorial__title">Fonctionnement</h2>
+        <div class="tutorial__buttons">
+          <button class="btn btn__tutorial"><i class="fas fa-lg fa-mobile-alt"></i>Choisissez un restaurant</button>
+          <button class="btn btn__tutorial"><i class="fas fa-list-ul"></i>Composez votre menu</button>
+          <button class="btn btn__tutorial"><i class="fas fa-store"></i>Dégustez au restaurant</button>
+        </div>
+      </section>
+
+
 <!--Section Restaurants-->
     <section>
     <div class="bloc">
             <h2>Restaurants</h2>
         <div class="bloc_restaurant">
-            <a href="./Pages/palettedugout.html" class="bloc_restaurant__cube">
-                <div class="photo photo-jay"></div>               
+            <a href="./palette_du_gout.html" class="bloc_restaurant__cube">
+               
+                <div class=" img img_jay"></div>               
                 <div class="bloc_restaurant__cube__cartouche">
                     <div>
                     <h4>La palette du goût</h4>
@@ -65,8 +63,8 @@
                 </div>
                 <div class ="bloc_restaurant__nouveau">Nouveau</div>
             </a>
-            <a href="./Pages/lanoteenchantee.html" class="bloc_restaurant__cube">
-                <div class="photo photo-stil"></div>
+            <a href="./la_note_enchante.html" class="bloc_restaurant__cube">
+                <div class="img img_stil"></div>
                 <div class="bloc_restaurant__cube__cartouche">
                     <div>
                     <h4>La note enchantée</h4>
@@ -79,8 +77,8 @@
                 </div>
                 <div class ="bloc_restaurant__nouveau">Nouveau</div>
             </a>
-            <a href="./Pages/alafrancaise.html" class="bloc_restaurant__cube">
-                <div class="photo photo-toa"></div>
+            <a href="./a_la_francaise.html" class="bloc_restaurant__cube">
+                <div class="img img_toa"></div>
                 <div class="bloc_restaurant__cube__cartouche">
                     <div>
                     <h4>À la française</h4>
@@ -92,8 +90,8 @@
                     </div>
                 </div>
             </a>
-            <a href="./Pages/ledelicedessens.html" class="bloc_restaurant__cube">
-                <div class="photo photo-louis"></div>
+            <a href="./le_delice_des_sens.html" class="bloc_restaurant__cube">
+                <div class="img img_louis"></div>
                 <div class="bloc_restaurant__cube__cartouche">
                     <div>
                     <h4>Le délice des sens</h4>
@@ -110,13 +108,13 @@
     </section>
     <footer> 
 <!--FOOTER-->
-<ul class="endPage">
-    <li class="endPage__title logoFont">ohmyfood</li>
-    <li class="endPage__lign"><a href="#"><i class="fas fa-sm fa-utensils"></i>Proposer un restaurant</a></li>
-    <li class="endPage__lign"><a href="#"><i class="fas fa-xs fa-hands-helping"></i>Devenir partenaire</a></li>
-    <li class="endPage__lign"><a href="#">Mentions légales</a></li>
-    <li class="endPage__lign"><a href="mailto:email@ohmyfood.com?subject=subjecttext">Contact</a></li> 
-  </ul>
+    <div class="footer">
+        <img class="logofooter" src="./img/logo/ohmyfood.png" alt="Oh my Food">
+                <div><i class="icon fas fa-utensils"></i><a href="#">Proposer un restaurant</a></div>
+                <div><i class="icon fas fa-hands-helping"></i><a href="#">Devenir partenaire</a></div>
+                <div><a href="#">Mentions légales</a></div>
+                <div><a href="email@email.fr">Contact</a></div>
+    </div>
     </footer>
 </body>
 </html>
