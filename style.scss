@@ -1,0 +1,129 @@
+/* IMPORTS */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;400;700&display=swap");
+@import "Sass/Utils/keyframes";
+@import "Sass/Utils/variables";
+@import "Sass/Utils/mixin";
+@import "Sass/Components/Loader";
+@import "Sass/Components/Heart";
+@import "Sass/Components/Button";
+@import "Sass/Pages/Menus";
+@import "Sass/Pages/home";
+@import "Sass/Layout/Footer";
+@import "Sass/Layout/Header";
+
+/* use the font */
+body {
+font-family: "Roboto", sans-serif;
+margin:0;
+    h1 {
+    @include font-shrikhand-titre;
+    }
+    h2 {
+    @include font-big;
+    }
+    h3 {
+    @include font-shrikhand-sous-titre;
+    }
+    h4 {
+    @include font-medium-bold;
+    }
+    h5 {
+    @include font-medium;
+    }
+    p {
+    @include font-light;
+    }
+}
+/********** MEDIA QUERIES **********/
+@media only screen and (min-width : 600px) {
+    h2 {
+    display: flex;
+    justify-content: center;
+    }
+/* RESTAURANT */
+    .bloc_restaurant {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width : 750px) {
+
+    .footer {
+    @include flexbox-center;
+        a, .logofooter {
+        padding-right:20px;
+        }
+    }
+/* FONCTIONNEMENT */
+    .bloc_fonctionnement {
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 10px;
+    flex-wrap:wrap;
+        &__cube {
+            padding: 0 20px 20px 20px;
+            margin: 35px 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;   
+            i {
+            padding:10px 0;
+            }  
+        }
+    }
+    .number {
+    position: relative;
+    top: -10px;
+    left: 0;
+    } 
+/* PAGES MENUS */
+    .bloc_menu {
+    padding-bottom:10px;
+        &--grid {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        }
+        &__categories {
+        display: grid;
+        align-self: start;
+        grid-template-rows: 1fr 1fr;
+        margin:0 20px;
+        }
+        &__soustitre { 
+        margin-left:35px;
+        }
+    }
+    .bloc_menu__container {
+    margin:10px;
+    } 
+}
+@media only screen and (min-width : 1000px) {
+/* RESTAURANT */
+    .bloc_restaurant {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media only screen and (min-width : 1200px) {
+/* PAGES MENUS */
+    .bloc_menu {
+    padding-bottom:10px;
+    max-width:100%;
+        &--grid {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        }
+        &__categories {
+        display: grid;
+        margin:0 20px;
+        }
+        &__soustitre { 
+        margin-left:35px;
+        }
+    }
+    .bloc_menu__container {
+    margin:10px;
+    }      
+}
